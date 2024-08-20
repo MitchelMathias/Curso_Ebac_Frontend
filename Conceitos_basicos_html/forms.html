@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <a href="./index.html">Pagina Inicial</a>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form>
+        <input type="text" placeholder="Seu Nome"/><br/><br/>
+        <label for="email">Seu e-mail</label>
+        <input id = "email" type="email" /><br/>
+        <input type="tel" placeholder="Seu Celular"><br/>
+        <input type="number" max ="10" min = "0" step="1"/><br/>
+        <input type="file"><br/>
+        <input type="color" id="sua_cor"><label for="sua_cor"> Escolha sua Cor</label><br/>
+        <input type="checkbox" id = "checkbox-termos"> <label for ="checkbox-termos" >Aceito os termos</label>
+        <p>
+            Qual Sua cor Favorita?
+        </p>
+        <input type="radio" name= "uma_seleção" id="cor-vermelha"/><label for = "cor-vermelha">Vermelho</label>
+        <input type="radio" name= "uma_seleção" id="cor-verde"/><label for = "cor-verde">Verde</label>
+        <input type="radio" name= "uma_seleção" id="cor-azul"/><label for = "cor-azul">Azul</label>
+        <input type="radio" name= "uma_seleção" id="cor-laranja"/><label for = "cor-laranja">laranja</label>
+        <input type="radio" name= "uma_seleção" id="cor-preta"/><label for = "cor-preta">Preto</label><br/><br/>
+        <label><blockquote>
+            <h3>
+                Qual seu filme favorito?
+                <select>
+                    <option>Filme A</option>
+                    <option>Filme B</option>
+                    <option>Filme C</option>
+                </select>
+            </h3>
+        </blockquote></label>
+        <blockquote>
+            <textarea>Digite seu filme</textarea>
+            <button type="submit">enviar</button>
+            <button type="reset">apagar</button>
+        </blockquote>
+    </form>
+</body>
+</html>
