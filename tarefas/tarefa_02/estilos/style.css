@@ -1,0 +1,143 @@
+@charset "urf8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    background-color: #2f3640;
+}
+
+header h1{
+    max-width: 1366px;
+    margin: 0 50px;
+}
+
+
+header nav ul li{
+    font-weight: bold;
+    display: inline;
+}
+
+header nav ul li a {
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+main section h2{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 2em;
+
+}
+
+main section.sports, main section.economia{
+    padding: 50px;
+    background-color: rgba(0, 128, 0, 0.1)
+}
+
+main section.divs_sports, main section.divs_economy{
+    max-width: 1336px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+main section.economia{
+    background-color: rgba(255, 255, 0, 0.45);
+}
+
+main section article{
+    flex: 1 1 30%;
+    max-width: 29%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.489);
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px;
+    border: 3px solid black;
+    
+}
+
+main section img{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100%;
+}
+
+main time{
+    font-size: 0.8em;
+    color: gray;
+}
+
+main section article h3{
+    padding: 10px;
+    text-align: left;
+}
+
+main section article p{
+    font-size:  0.8em;
+    text-indent: 1em;
+    text-align: justify;
+}
+
+main section article a{
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin-top: 5px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #009432;
+}
+
+main section article a:hover{
+    text-decoration: underline;
+    background-color:#007326;
+    transition: background-color .3s;
+}
+
+@media screen and (max-width: 520px) {
+
+    header h1{
+        width: 100vw;
+        text-align: center;
+        margin: 0px;
+    }
+
+    header nav ul li a {
+        padding: 0px;
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+    }
+    
+    main section article{
+        flex: 1 1 90%;
+        max-width: 90%;
+    }
+}
