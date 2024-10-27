@@ -12,7 +12,7 @@ header{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin: auto;
     padding-top: 30px;
     padding-bottom: 30px;
     color: white;
@@ -20,12 +20,11 @@ header{
 }
 
 header h1{
-    max-width: 1366px;
-    margin: 0 50px;
+    margin: auto;
 }
 
-
 header nav ul li{
+    margin-right: 20px;
     font-weight: bold;
     display: inline;
 }
@@ -49,26 +48,36 @@ main section h2{
 
 }
 
-main section.sports, main section.economia{
+main section.sports, main section.economia, main section.tec, main section.ciencia{
     padding: 50px;
     background-color: rgba(0, 128, 0, 0.1)
 }
 
-main section.divs_sports, main section.divs_economy{
+main section.divs_sports, main section.divs_economy, main section.divs_tec, main section.divs_ciencia{
     max-width: 1336px;
     margin: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    
 }
 
 main section.economia{
     background-color: rgba(255, 255, 0, 0.45);
 }
 
+main section.tec{
+    background-color: #00FFFF;
+}
+
+main section.ciencia{
+    background-color: #FF9800;
+}
+
+
 main section article{
     flex: 1 1 30%;
-    max-width: 29%;
+    max-width: 30%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
