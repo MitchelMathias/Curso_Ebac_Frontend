@@ -149,10 +149,24 @@ footer p{
 }
 
 @media screen and (max-width:900px) {
+
+    header h1{
+        font-size: 1.5em;
+    }
+
+    header nav li{
+        padding: 3px;
+        font-size: 0.9em;
+    }
     
     main section{
         display: flex;
         flex-flow: column wrap;
+    }
+
+    main section.main > img{
+        margin-bottom: 10px;
+        padding: 0px;
     }
 
     main section > img{
@@ -167,10 +181,14 @@ footer p{
         display: block;
     }
 
-    main section.formularios div.divs_contato_rede_end {
+    main section.formularios div.divs_contato_rede_end{
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column nowrap; 
     }
     
+    div.redes h3, div.redes ul, div.endereco, footer{
+        margin-top: 10px;
+        text-align: center;
+    }
 }
 
