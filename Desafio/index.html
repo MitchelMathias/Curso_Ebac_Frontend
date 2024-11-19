@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <title>Portfólio | Mathias</title>
@@ -23,12 +23,12 @@
                         <a href="#pag02">Experiência</a>
                     </li>
                     <li>
-                        <a href="#">Contato</a>
+                        <a href="#pag03">Contato</a>
                     </li>
                 </ul>
             </div>
             <div class="cv">
-                <a href="#">Download CV</a>
+                <a target="_blank" href="arquivos/Currículo L.pdf">Download CV</a>
             </div>
         </section>
     </header>
@@ -39,31 +39,26 @@
                     <div class="texto">
                         <h3>Mitchel Mathias</h3>
                         <h1>Eu sou Desenvolvedor</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dicta numquam nobis est repellat. Ipsam repudiandae, in libero necessitatibus assumenda perferendis ducimus aliquam voluptates nostrum ab? Obcaecati tenetur deserunt doloribus.</p>
+                        <p>Com 8 anos de experiência no Exército Brasileiro na área de informática, desenvolvi fortes habilidades em liderança e resolução de problemas. Hoje, atuando como desenvolvedor Full Stack, aplico esse conhecimento para criar soluções integradas, escaláveis e de alta qualidade, unindo front-end e back-end com agilidade e eficiência. Meu foco é sempre na excelência, com um compromisso contínuo com resultados de impacto.</p>
             
                         <div class="links">
-                            <a class="contrate-me" href="#">Contrate-me</a>
-                            <a class="cv" href="#">Download CV</a>
+                            <a target="_blank" rel="noopener" class="contrate-me" href="https://wa.me/5553991431660">Contate-me</a>
+                            <a target="_blank" class="cv" href="arquivos/Currículo L.pdf">Download CV</a>
+                        </div>
+                        <div class="redes">
+                            <div>
+                                <a target="_blank" rel="noopener" title="Acesse GitHub" href="https://github.com/MitchelMathias"><i class="uil uil-github"></i>
+                                </a>    
+                            </div>          
+                            <div>
+                                <a target="_blank" rel="noopener" title="Acesse Linkedin" href="https://www.linkedin.com/in/mitchel-mathias-540380171/"><i class="uil uil-linkedin"></i>
+                                </a>    
+                            </div>  
                         </div>
                     </div>
                     <div class="img">
-                        <img src="img/mathias.png" alt="Foto minha">
+                        <img src="img/Mitchel.jpg" alt="Foto minha">
                     </div>
-                </div>
-                <div class="redes">
-                    <div>
-                        <a target="_blank" rel="noopener" title="Acesse GitHub" href="https://github.com/MitchelMathias"><i class="uil uil-github"></i>
-                        </a>    
-                    </div>          
-                    <div>
-                        <a target="_blank" rel="noopener" title="Acesse Linkedin" href="https://www.linkedin.com/in/mitchel-mathias-540380171/"><i class="uil uil-linkedin"></i>
-                        </a>    
-                    </div>  
-                </div>
-            </article>
-            <article class="rodape">
-                <div class="scroll">
-                    <p><a href="#pag02"><i class="uil uil-mouse-alt"></i>Scroll</a></p>
                 </div>
             </article>
         </section>
@@ -73,8 +68,8 @@
                     <h2>Experiência</h2>
                     <div class="introducao">
                         <h3>Introdução</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deserunt voluptates ipsam quas dolorem possimus nobis blanditiis quos sapiente expedita ratione, in harum veniam consequatur fuga aperiam rerum et voluptatibus.</p>
-                        <a class="cv" href="#">Download CV</a>
+                        <p>Como desenvolvedor Full Stack, vejo além das fronteiras entre front-end e back-end – vejo um universo de possibilidades. Minha experiência me capacita a desenvolver soluções digitais completas, em que cada linha de código contribui para a melhor experiência do usuário e a máxima eficiência do sistema. De interfaces atraentes a servidores robustos, tenho a habilidade de construir, integrar e otimizar sistemas complexos com agilidade e excelência. Minha paixão é transformar ideias em produtos digitais funcionais e escaláveis, sempre pronto para encarar novos desafios e superar as expectativas do cliente.</p>
+                        <a class="cv" href="arquivos/Currículo L.pdf">Download CV</a>
                     </div>
                     <div class="fullstack">
                         <div class="frontend">
@@ -97,11 +92,56 @@
                             <h5>MySQL</h5>
                         </div>
                     </div>
+                    <div class="proj_exp">
+                        <h2>Projetos</h2>
+                        <div class="proj">
+                            <div onclick="window.open('https://github.com/MitchelMathias?tab=repositories', '_blank','noopener')" style="cursor: pointer;">
+                                <i class="uil uil-bag"></i>
+                                <h3>Projetos</h3>
+                                <p>10+ projetos finalizados</p>
+                            </div>
+                            <div onclick="window.open('arquivos/Currículo L.pdf', '_blank')" style="cursor: pointer;">
+                                <i class="uil uil-medal"></i>
+                                <h3>Experiência</h3>
+                                <p>2+ Anos de experiência</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </article>
         </section>
-        <section>
+        <section id="pag03" class="pag03">
+            <article>
+                <h2>Contato</h2>
+                <p>Se você tem um projeto em mente, entre em contato comigo. Estou à disposição para ajudar a concretizá-lo!</p>
+                <div class="contat-me">
+                    <div class="mail_cel">
+                        <h2>Contate-me</h2>
+                        <p>Entre em contato por e-mail, WhatsApp ou preencha o formulário ao lado. Vamos tirar seus projetos do papel!</p>
+                        <p>
+                            <i class="uil uil-envelope"> : </i><a href="mailto:mitchelmathias2904@gmail.com" type="Email" target="_blank">mitchelmathias2904@gmail.com</a>
+                        </p>
+                        <p>
+                            <i class="uil uil-phone"> : </i>
+                            <a rel="noopener" href="https://wa.me/5553991431660" target="_blank" type="Tel">55 (53) 9 9143-1660</a>
+                        </p>
+                    </div>
+                    <div class="formulario">
+                        <form action="https://formspree.io/f/mzzbggew" autocomplete="on" method="post" target="_blank">
+                            <input class="nome" type="text" placeholder="Seu Nome" autocomplete="name" name="nome">
+                            <input class="email" type="email" placeholder="Email" autocomplete="email" name="email">
+                            <textarea placeholder="Mensagem..." class="mensagem" name="mensagem" id="mensagem"></textarea>
+                            <input type="submit" class="enviar" value="Enviar">
+                            <input type="reset" class="reset">
+                        </form>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
+    <footer>
+        <h1>Mitchel Mathias</h1>
+        <p>Copyright &copy; <strong>Mitchel Mathias</strong> - Todos Direitos Reservados.</p>
+    </footer>
 </body>
 </html>

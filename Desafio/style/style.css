@@ -27,8 +27,6 @@
 
 header{
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.155);
-    padding: 10px 0px;
-    max-width: 1280px;
     padding: 20px 40px;
 }
 
@@ -38,6 +36,7 @@ header{
 }
 
 .header {
+    margin: auto;
     max-width: 1280px;
     display: flex;
     flex-flow: row wrap;
@@ -82,6 +81,7 @@ header{
 }
 
 main{
+    margin: auto;
     display: flex;
     flex-flow: column nowrap;
     max-width: 1280px;
@@ -137,6 +137,7 @@ main h3{
     flex: 1 1 220px;
     max-width: 500px;
     margin: auto;
+    padding-bottom: 15px;
 }
 
 .links{
@@ -167,8 +168,8 @@ a.contrate-me:hover, a.contrate-me:focus{
 }
 
 .redes div{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     margin: 5px;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
@@ -177,57 +178,26 @@ a.contrate-me:hover, a.contrate-me:focus{
 
 .redes a{
     text-align: center;
-    margin-top: 8px;
+    margin-top: 5.5px;
     border-radius: 25%;
     display: block;
     width: 100%;
     height: 100%;
 }
 
-.redes i{
+.uil-linkedin, .uil-github{
+    padding: 0px;
+    margin: 0px;
     color: black;
+    font-size: 25px;
 }
 
 .redes a i:hover, .redes a i:focus{
     color: var(--first-color)
 }
 
-
-.scroll{
-    cursor: pointer;
-    width: 90px;
-    margin: auto;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 10px ;
-    text-align: center;
-    border:1px solid black;
-}
-
-.scroll a {
-    border-radius: 20px;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    display: block;
-    color: black;
-    text-decoration: none;
-}
-
-.scroll a:hover, .scroll a:focus {
-    font-weight: 600;
-    color: white;
-    background-color: var(--second-color);
-}
-
 .pag02{
     text-align: center;
-}
-
-.introducao{
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 35px;
-    overflow: hidden;
 }
 
 .pag02 h2{
@@ -241,10 +211,16 @@ a.contrate-me:hover, a.contrate-me:focus{
     margin: 20px 0px;
 }
 
+.introducao{
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+    overflow: hidden;
+}
+
 .pag02 p{
     text-indent: 2em;
     margin: 15px;
-    text-align: center;
+    text-align: justify;
 }
 
 .pag02 a{
@@ -285,6 +261,189 @@ a.contrate-me:hover, a.contrate-me:focus{
     
 }
 
+.proj_exp{
+    margin-bottom: 20px;
+}
+
+.proj_exp h2{
+    margin: 60px 0px;
+}
+
+.proj{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+
+}
+
+.proj div{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    margin: 15px;
+    flex: 1 0 200px;
+    min-width: 200px;
+}
+
+.proj i{
+    width: 100%;
+    height: 100%;
+}
+
+.proj h3{
+    margin: 0px 15px;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: var(--text-color-second);
+}
+
+.proj p{
+    margin: 0px;
+    text-indent: 0px;
+    text-align: center;
+}
+
+.proj div:hover, .proj div:focus{
+
+    .uil-bag, .uil-medal{
+        color: white;
+    }
+
+    h3, p{
+        color: white;
+        background-color: var(--second-color);
+    }
+
+    background-color: var(--second-color);
+}
+
+.uil-medal, .uil-bag{
+    color: var(--second-color);
+    font-size: 50px;
+}
+
+.pag03 h2{
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+}
+
+.pag03 p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contat-me {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.contat-me div{
+    padding: 1px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    margin: 15px;
+    flex: 1 0 340px;
+    min-width: 300px;
+    min-height: 270px;
+}
+
+.mail_cel{
+    background-color: var(--second-color);
+
+    h2, p, a, i{
+        color: white;
+    }
+}
+
+div.mail_cel p{
+    padding: 10px;
+}
+
+.mail_cel:hover , .mail_cel:focus{
+    background-color: white;
+    h2, p, a, i{
+        color: var(--text-color-second);
+    }
+}
+
+.contat-me h2{
+    margin: 25px 0px;
+}
+
+.contat-me p{
+    a{
+        text-decoration: none;
+    }
+    margin: 25px 0px;
+}
+
+.contat-me p:hover{
+    a{
+        text-decoration: underline;
+    }
+}
+
+.formulario{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+div.formulario{
+    box-shadow: none;
+}
+
+.formulario input{
+    border: 2px solid darkgray;
+    padding: 10px;
+    text-indent: 8px;
+    width: 47%;
+    border-radius: 20px;
+    margin: 3px;
+    flex: 1 0 150px;
+}
+
+textarea.mensagem{
+    resize: none;
+    padding: 10px;
+    border: 2px solid darkgray;
+    border-radius: 20px;
+    margin: 6px 0px;
+    width: 100%;
+    height: 80%;
+}
+
+.enviar, .reset{
+    background-color: white;
+}
+
+.enviar:hover, .enviar:focus , .reset:hover, .reset:focus{
+    background-color: var(--second-color);
+    color: white;
+}
+
+
+footer{
+    h1{
+        font-size: 1.2em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    strong{
+        color: var(--text-color-third);
+    }
+    margin: 80px 0px 0px 0px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
 @media screen and (max-width: 730px) {
 
     .nav ul {
@@ -294,6 +453,10 @@ a.contrate-me:hover, a.contrate-me:focus{
 
     .cv{
         display: none;
+    }
+
+    main{
+        padding: 0px 20px;
     }
     
 }
