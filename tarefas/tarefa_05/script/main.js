@@ -1,27 +1,47 @@
 document.getElementById('ouvinte').addEventListener('submit', adicionar);
 
+let notaMinima = parseFloat(prompt('Digite a Nota minima'))
 let inseridos = document.getElementById('dados')
 let notas = []
+let atividades = []
 let soma = 0
+
+function validarNota(){
+    if (isNaN(notaMinima)){
+        alert('Vou considerar 6!!')
+        notaMinima = 6
+    }
+
+}
 
 function adicionar(e){
     e.preventDefault()
+    
+    validarNota()
 
     let atv = document.getElementById('atividade')
     let nota = parseFloat(document.getElementById('nota').value)
-    let emoji = nota >= 6 
+    let emoji = nota >= notaMinima 
         ? '<img src="img/aprovado.png" alt="Emoji Feliz"> ' 
         : '<img src="img/reprovado.png" alt="Emoji triste">'
 
-    let linha =`<tr>
-                    <td>${atv.value}</td>
-                    <td>${nota}</td>
-                    <td>${emoji}</td>
-                </tr>`
+    if (atividades.includes(atv.value)){
+        alert(`A Atividade ${atv.value} ja inserida`)
+    }
 
-    inseridos.innerHTML += linha
+    else{
+        atividades.push(atv.value)
+        let linha =`<tr>
+                        <td>${atv.value}</td>
+                        <td>${nota}</td>
+                        <td>${emoji}</td>
+                    </tr>`
+    
+        inseridos.innerHTML += linha
+    
+        media(nota)
+    }
 
-    media(nota)
 }
 
 function media(nota){
@@ -32,7 +52,7 @@ function media(nota){
     soma += nota
     let mediaGeral = soma / notas.length
 
-    if (mediaGeral >= 6){
+    if (mediaGeral >= notaMinima){
         situacao.className = 'resultado aprovado'
         situacao.textContent = 'Aprovado'
     }

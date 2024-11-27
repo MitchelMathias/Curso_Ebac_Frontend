@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Agenda</title>
+</head>
+<body>
+    <header>
+        <h1>Agenda de Contatos</h1>
+    </header>
+    <main>
+        <div class="formulario">
+            <h2>Adicione os Contatos:</h2>
+            <form action="#" id="ouvinte" autocomplete="on">
+                <div class="nomeNumero">
+                    <input id="nome" type="text" autocomplete="name" placeholder="Nome do Contato" required min="3">
+                    <input id="numero" type="number" autocomplete="tel" placeholder="Número" required min="8">
+                </div>
+                <div class="cadastro">
+                    <input type="submit" value="Cadastrar">
+                    <input type="reset" value="Apagar" >
+                </div>
+            </form>
+        </div>
+        <table cellspacing = '10'>
+            <thead>
+                <tr>
+                    <td>Nome</td>
+                    <td class="tel">Cel</td>
+                </tr>
+            </thead>
+            <tbody id="resposta">
+            </tbody>
+            <tfoot id="total">
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <p>&copy;Mitchel Mathias</p>
+    </footer>
+    <script src="script/main.js"></script>
+</body>
+</html>
