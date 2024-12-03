@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #1EA9B6;
+    button:hover, button:focus{
+        cursor: pointer;
+        color: white;
+        background-color: #243536;
+
+    }
+}
+
+header{
+    padding: 40px;
+    background-color:#305D61;
+    h1{
+        color: white;
+        text-align: center;
+    }
+    div{
+        background-color: #2E848B;
+        border-radius: 20px;
+        border: 2px solid #2B3233;
+        display: flex;
+        flex-flow:row nowrap;
+        justify-content: center;
+        align-items: center;
+        min-width: 250px;
+        max-width: 300px;
+        margin: 20px auto 0px auto;
+        padding: 20px;
+        p{
+            color: white;
+        }
+        button{
+            border-radius: 10px;
+            margin: 5px;
+            padding: 5px 10px;
+        }
+    }
+}
+
+main{
+    max-width: 1280px;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    .movel{
+        display: inline-block;
+        width: auto;
+        margin-top: 60px;
+        input{
+            text-align: center;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        button{
+            padding: 5px;
+            border-radius: 10px;
+        }
+    }
+    .tarefas{
+        padding-top: 40px;
+        label{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.4em;
+            input{
+                margin-right: 8px;
+            }
+        }
+    }
+}
