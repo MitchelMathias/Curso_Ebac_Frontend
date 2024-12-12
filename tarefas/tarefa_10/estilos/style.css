@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  border-bottom: 1px solid black;
+}
+header .pesquisa {
+  padding: 16px 16px 0 16px;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  list-style: none;
+}
+header nav .menu li {
+  border-top: 3px solid transparent;
+  cursor: pointer;
+  padding: 16px;
+  position: relative;
+}
+header nav .menu li .sub_menu {
+  position: absolute;
+  display: none;
+  width: 300px;
+}
+header nav .menu li .sub_menu li {
+  list-style: none;
+  padding: 5px;
+  border-top: 0;
+}
+header nav .menu li .sub_menu li a {
+  width: 300px;
+  text-decoration: none;
+  color: black;
+}
+header nav .menu li:hover {
+  border-color: red;
+}
+header nav .menu li:hover .sub_menu {
+  background-color: white;
+  border: 1px solid red;
+  display: block;
+}/*# sourceMappingURL=style.css.map */

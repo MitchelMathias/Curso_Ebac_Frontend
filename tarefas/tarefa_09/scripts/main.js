@@ -56,6 +56,16 @@ $(document).ready(function(){
             alert('Erro nos campos')
         }
     })
+
+    $('.destaque button').on('click', function(){
+        const h3 = $(this).parent().find('h3').text()
+
+        $('html').animate({
+            scrollTop: $('.contato').offset().top
+        })
+
+        $('#veiculo').val(h3)
+    })
 })
 
 
