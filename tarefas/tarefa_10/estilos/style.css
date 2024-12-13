@@ -3,51 +3,167 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: roboto, sans-serif;
+}
+
+body a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 20px 0;
+  text-align: center;
+}
+body a:hover {
+  text-decoration: underline;
+}
+body img {
+  display: block;
+  width: 95%;
+  margin: auto;
+}
+body h2 {
+  padding: 20px 0;
 }
 
 header {
+  padding-top: 20px;
   border-bottom: 1px solid black;
 }
-header .pesquisa {
-  padding: 16px 16px 0 16px;
-  max-width: 1024px;
-  margin: 0 auto;
+
+.pesquisa {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  max-width: 1024px;
+  margin: auto;
 }
-header nav .menu {
+
+nav {
+  width: 95%;
+  max-width: 1024px;
+  margin: auto;
+}
+nav .menu {
+  display: block;
+  list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: start;
-  list-style: none;
 }
-header nav .menu li {
-  border-top: 3px solid transparent;
-  cursor: pointer;
-  padding: 16px;
+nav .menu li {
+  border-top: 2px solid transparent;
   position: relative;
+  padding: 16px;
 }
-header nav .menu li .sub_menu {
+nav .menu li .sub_menu {
+  border: 1px solid red;
+  background-color: white;
+  width: 200px;
   position: absolute;
-  display: none;
-  width: 300px;
-}
-header nav .menu li .sub_menu li {
   list-style: none;
+  display: none;
+}
+nav .menu li .sub_menu li {
   padding: 5px;
-  border-top: 0;
+  border-top: none;
 }
-header nav .menu li .sub_menu li a {
-  width: 300px;
-  text-decoration: none;
-  color: black;
+nav .menu li .sub_menu a {
+  padding: 0px;
 }
-header nav .menu li:hover {
+nav .menu li:hover {
   border-color: red;
 }
-header nav .menu li:hover .sub_menu {
-  background-color: white;
-  border: 1px solid red;
+nav .menu li:hover .sub_menu {
   display: block;
+}
+
+.tudo {
+  padding-top: 50px;
+  width: 98%;
+  max-width: 1024px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.tudo .destaque article {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.tudo .destaque article a {
+  margin: 0 10px;
+  font-size: 2em;
+}
+.tudo .articles {
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+}
+.tudo .ultimas_noticias article, .tudo .lateral article {
+  display: flex;
+  flex-flow: column;
+}
+
+@media screen and (max-width: 767px) {
+  body header .pesquisa {
+    flex-flow: column nowrap;
+    margin: auto;
+  }
+  body header .pesquisa form {
+    padding-top: 20px;
+  }
+  body header .menu_hamburguer {
+    margin: 20px;
+    cursor: pointer;
+    width: 32px;
+  }
+  body header .menu_hamburguer span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: red;
+    margin-bottom: 3px;
+  }
+  body header nav {
+    width: 95%;
+    max-width: 1024px;
+    margin: auto;
+  }
+  body header nav .menu {
+    display: none;
+    flex-flow: column nowrap;
+  }
+  body header nav .menu li {
+    border-top: none;
+  }
+  body header nav .menu li .sub_menu {
+    border: none;
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+  body header nav .menu li .sub_menu li {
+    padding: 8px;
+    border-top: none;
+  }
+  body header nav .menu li .sub_menu a {
+    text-align: left;
+    padding: 0px;
+  }
+  body .tudo {
+    display: block;
+  }
+  body .tudo .destaque article {
+    display: block;
+  }
+  body .tudo .ultimas_noticias .articles {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body .tudo .principal .destaque a {
+    font-size: 1.5em;
+  }
+  body .tudo .ultimas_noticias .articles {
+    grid-template-columns: repeat(2, 50%);
+  }
 }/*# sourceMappingURL=style.css.map */
