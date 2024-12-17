@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    color: white;
+    padding: 30px 0;
+    background-color: darkblue;
+    .container{
+        width: 90%;
+        margin: auto;
+        max-width: 1024px;
+        display: flex;
+        justify-content: space-between;
+        h1{
+            font-weight: bold;
+            font-style: italic;
+        }
+        ul{
+            list-style: none;
+            li{
+                padding: 5px;
+                a{
+                    font-weight: bold;
+                    color: white;
+                    text-decoration: none;
+                }
+                a:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.foto_sobre{
+    width: 90%;
+    margin: auto;
+    max-width: 1024px;
+    margin-top: 40px;
+    .fachada{
+        text-align: center;
+        img{
+            max-width: 600px;
+            border-radius: 0% 35% 5% 40%;
+            width: 100%;
+        }
+    }
+    .sobre{
+        margin-top: 20px;
+        h2{
+            font-style: italic;
+            color: rgb(49, 102, 182);
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid  rgb(49, 102, 182);
+            
+        }
+        p{
+            margin-bottom: 10px;
+            text-indent: 1em;
+            text-align: justify;
+        }
+    }
+}
+
+.produtos{
+    width: 90%;
+    max-width: 1024px;
+    margin: auto;
+    h2{
+        margin-top: 50px;
+        font-style: italic;
+        color: rgb(49, 102, 182);
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+        border-bottom: 2px solid  rgb(49, 102, 182);
+    }
+    .divs{
+        div{
+            margin-bottom: 40px;
+            img{
+                width: 100%;
+            }
+            h3{
+                
+                margin: 15px 0;
+            }
+            p{
+                margin-bottom: 10px;
+            }
+            button{
+                color: white;
+                background-color: darkblue;
+                border: none;
+                border-radius: 10px;
+                font-weight: bold;
+                width: 100%;
+                padding: 10px;
+            }
+            button:hover{
+                cursor: pointer;
+                background-color: rgb(0, 0, 255);
+            }
+        }
+    }
+}
+
+@media  screen and (min-width: 1024px){
+    body{
+        header{
+            ul{
+                li{
+                    display: inline-block;
+                }
+            }
+        }
+        main{
+            .foto_sobre{
+                display: grid;
+                grid-template-columns: 48% 48%;
+                gap: 4%;
+            }
+            .produtos{
+                .divs{
+                    display: grid;
+                    grid-template-columns: repeat(4,24%);
+                    gap: 1.33%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    main{
+        .produtos{
+            .divs{
+                display: grid;
+                grid-template-columns: 48% 48%;
+                gap: 4%;
+                div{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+
+
