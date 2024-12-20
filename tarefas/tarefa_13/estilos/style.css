@@ -1,0 +1,38 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: darkblue;
+  padding: 30px 0;
+}
+header h1 {
+  color: white;
+}
+header a {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: underline;
+}
+
+main .img_texto {
+  margin-top: 40px;
+}
+main .img_texto img {
+  border-radius: 20px;
+}
+main .img_texto .texto {
+  margin-top: 20px;
+}
+main .img_texto .texto p {
+  text-align: justify;
+}
+main .formulario button {
+  width: 100%;
+  margin: 20px 0px;
+}/*# sourceMappingURL=style.css.map */

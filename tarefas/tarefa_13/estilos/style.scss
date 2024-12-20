@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: darkblue;
+    padding: 30px 0;
+    h1{
+        color: white;
+    }
+    a{
+        font-size: 1.5em;
+        color: white;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+main{
+    .img_texto{
+        margin-top: 40px;
+        img{
+            border-radius: 20px;
+        }
+        .texto{
+            margin-top:20px;
+            p{
+                text-align: justify;
+            }
+        }
+    }
+    .formulario{
+        button{
+            width: 100%;
+            margin: 20px 0px;
+        }
+    }
+}
