@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="botstrap/bootstrap.min.css">
+    <title>Nav | Bar</title>
+</head>
+<style>
+    header{
+        color: rgb(0, 0, 0);
+        background-color: white;
+        position: sticky;
+        top: 0px;
+    }
+
+
+    main{
+        background-color: rgba(127, 255, 212, 0.397);
+    }
+    section{
+        height: 100vh;
+    }
+</style>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <h1>Nav Bar</h1>
+                <button data-bs-toggle="collapse" data-bs-target="#menu" class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse" id="menu">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container" data-bs-spy="scroll">
+            <section>
+                <h1 id="inicio">Inicio</h1>
+            </section>
+            <section>
+                <h1 id="sobre">Sobre</h1>
+            </section>
+            <section>
+                <h1 id="contato">contato</h1>
+            </section>
+        </div>
+    </main>
+    <script src="botstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
