@@ -51,6 +51,7 @@
                         </li>
                     </ul>
                 </nav>
+                <button id="check_emails" type="button" class="btn btn-warning">Checar emails</button>
             </div>
         </div>
     </header>
@@ -66,7 +67,32 @@
                 <h1 id="contato">contato</h1>
             </section>
         </div>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="tost" class="toast">
+                <header class="toast-header d-flex justify-content-between">
+                    <strong>Inportante</strong>
+                    <button data-bs-dismiss="toast" class="btn-close text-end">
+                    </button>
+                </header>
+                <main class="toast-body bg-warning text-black rounded">
+                    <p>você possui 500 mensagens</p>
+                </main>
+            </div>
+        </div>
     </main>
     <script src="botstrap/bootstrap.bundle.min.js"></script>
+    <script>
+        const check = document.getElementById('check_emails')
+        const mensagem = document.getElementById('tost')
+        
+        if(check){
+            check.addEventListener('click', function(){
+                const toast = new bootstrap.Toast(mensagem)
+                toast.show()
+            })
+        }
+
+
+    </script>
 </body>
 </html>
