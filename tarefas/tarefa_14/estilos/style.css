@@ -16,6 +16,7 @@ aside {
           clip-path: circle();
 }
 .todos .principal .container-carousel .carousel.slide {
+  padding: 0px 0px;
   height: 60vh;
   border-radius: 50px;
 }
@@ -24,4 +25,18 @@ aside {
 }
 .todos .principal .container-carousel .carousel.slide .carousel-inner .carousel-item img {
   height: 60vh;
+}
+.todos .principal .container-carousel .indicadores .foto-texto {
+  align-items: center;
+}
+.todos .principal .container-carousel .indicadores .foto-texto:hover {
+  border-radius: 20px;
+  background-color: rgba(211, 211, 211, 0.962);
+}
+.todos .principal .container-carousel .indicadores .foto-texto img {
+  border-radius: 16px;
+  padding: 5px;
+}
+.todos .principal .container-carousel .indicadores .foto-texto p {
+  margin-bottom: 0px;
 }/*# sourceMappingURL=style.css.map */
