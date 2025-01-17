@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos/style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <main class="row m-auto">
+        <aside class="col-3 lateral">
+            <h1 class="text-center">Epic Games</h1>
+            <button class="d-block w-50 m-auto btn btn-primary">Todos</button>
+            <button class="d-block w-50 m-auto btn btn-primary">Biblioteca</button>
+            <button class="d-block w-50 m-auto btn btn-primary">Descobrir</button>
+            <h5 class="mt-5">Continuar Assistindo</h5>
+            <div class="row assistindo">
+                <img class="col-6 rounded-5" src="imgs/bleach.jpeg" alt=" bleach">
+                <p class="col-6">bleach</p>
+            </div>
+        </aside>
+        <main class="col-9 todos">
+            <header class="row mt-3">
+                <div class="col-6 d-flex">
+                    <input class="form-control" type="text" placeholder="pesquisar">
+                    <button class="btn btn-primary" type="submit">pesquisar</button>
+                    <div class="dropdown ms-1">
+                        <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Descobrir</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Navegar</a>
+                            <a class="dropdown-item" href="#">Novidades</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <button class="btn btn-primary me-1">Lista Desejos</button>
+                    <button class="btn btn-primary">Favoritos</button>
+                    <div class="usuario">
+                        <img src="imgs/bleach.jpeg" alt="bleach">
+                        <img src="imgs/bleach.jpeg" alt="bleach">
+                    </div>
+                </div>
+            </header>
+            <main class="row principal">
+                <div class="col-9 mt-4 container-carousel">
+                    <div class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded-5">
+                            <div data-bs-interval="600" class="carousel-item active">
+                                <img class="d-block w-100" src="imgs/gojo.jpeg" alt="gojo">
+                            </div>
+                            <div data-bs-interval="600" class="carousel-item" >
+                                <img class="d-block w-100" src="imgs/dabi.jpeg" alt="gojo">
+                            </div>
+                            <div data-bs-interval="600" class="carousel-item" >
+                                <img class="d-block w-100" src="imgs/hashivento.jpeg" alt="gojo">
+                            </div>
+                            <div data-bs-interval="600" class="carousel-item" >
+                                <img class="d-block w-100" src="imgs/inousuk.jpeg" alt="gojo">
+                            </div>
+                            <div data-bs-interval="600" class="carousel-item" >
+                                <img class="d-block w-100" src="imgs/pain.jpeg" alt="gojo">
+                            </div>
+                        </div>    
+                        <button class="carousel-control-prev" data-bs-target=".carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" data-bs-target=".carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button class="active" data-bs-target=".carousel" data-bs-slide-to="0"></button>
+                            <button data-bs-target=".carousel" data-bs-slide-to="1"></button>
+                            <button data-bs-target=".carousel" data-bs-slide-to="2"></button>
+                            <button data-bs-target=".carousel" data-bs-slide-to="3"></button>
+                            <button data-bs-target=".carousel" data-bs-slide-to="4"></button>
+                        </div>
+                    </div>
+                    <div class="col-3 indicadores">
+
+                    </div>
+                </div>
+            </main>
+        </main>
+        <footer>
+
+        </footer>
+    </main>
+    <script src="lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>

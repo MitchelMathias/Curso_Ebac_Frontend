@@ -1,11 +1,39 @@
-@charset "utf-8";
-
-$cor1: #0D0D0D;
-$cor2: red;
-
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: cursive;
 }
+
+aside{
+    border-right: 1px solid black;
+    height: 100vh;
+}
+
+.todos{
+    header{
+        .usuario{
+            img{
+                width: 50px;
+                clip-path: circle();
+            }
+        }
+    }
+    .principal{
+        .container-carousel{
+            .carousel.slide{
+                height: 60vh;
+                border-radius: 50px;
+                .carousel-inner{
+                    .carousel-item{
+                        overflow: hidden;
+                        img{
+                            height: 60vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
