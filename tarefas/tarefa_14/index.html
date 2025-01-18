@@ -10,15 +10,17 @@
 <body>
     <main class="row m-auto">
         <aside class="col-3 lateral">
-            <h1 class="text-center">Epic Games</h1>
-            <button class="d-block w-50 m-auto btn btn-primary">Todos</button>
-            <button class="d-block w-50 m-auto btn btn-primary">Biblioteca</button>
-            <button class="d-block w-50 m-auto btn btn-primary">Descobrir</button>
-            <h5 class="mt-5">Continuar Assistindo</h5>
-            <div class="row assistindo">
-                <img class="col-6 rounded-5" src="imgs/bleach.jpeg" alt=" bleach">
-                <p class="col-6">bleach</p>
-            </div>
+            <section class="lateral-parada">
+                <h1 class="text-center">Epic Games</h1>
+                <button class="d-block w-100 mt-1 m-auto btn btn-primary">Todos</button>
+                <button class="d-block w-100 mt-1 m-auto btn btn-primary">Biblioteca</button>
+                <button class="d-block w-100 mt-1 m-auto btn btn-primary">Descobrir</button>
+                <h5 class="mt-5">Continuar Assistindo</h5>
+                <div class="row assistindo">
+                    <img class="col-6 rounded-5" src="imgs/bleach.jpeg" alt=" bleach">
+                    <p class="col-6">bleach</p>
+                </div>
+            </section>
         </aside>
         <main class="col-9 todos">
             <header class="row mt-3">
@@ -43,7 +45,7 @@
                 </div>
             </header>
             <main class="row m-auto principal">
-                <div class="col-12 mt-4 container-carousel">
+                <section class="col-12 mt-4 container-carousel">
                     <div class="row">
                         <div class="col-9 carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner rounded-5">
@@ -78,29 +80,239 @@
                             </div>
                         </div>
                         <div class="col-3 indicadores d-flex flex-column justify-content-between">
-                            <div class="d-flex foto-texto">
+                            <div class="d-flex foto-texto" data-bs-target=".carousel" data-bs-slide-to="0">
                                 <img class="w-50" src="imgs/gojo.jpeg" alt="gojo">
                                 <p>Jujutsu no Kaisen</p>
                             </div>
-                            <div class="d-flex foto-texto">
+                            <div class="d-flex foto-texto" data-bs-target=".carousel" data-bs-slide-to="1">
                                 <img class="w-50" src="imgs/dabi.jpeg" alt="gojo">
                                 <p>Jujutsu no Kaisen</p>
                             </div>
-                            <div class="d-flex foto-texto">
+                            <div class="d-flex foto-texto" data-bs-target=".carousel" data-bs-slide-to="2">
                                 <img class="w-50" src="imgs/hashivento.jpeg" alt="gojo">
                                 <p>Jujutsu no Kaisen</p>
                             </div>
-                            <div class="d-flex foto-texto">
+                            <div class="d-flex foto-texto" data-bs-target=".carousel" data-bs-slide-to="3">
                                 <img class="w-50" src="imgs/inousuk.jpeg" alt="gojo">
                                 <p>Jujutsu no Kaisen</p>
                             </div>
-                            <div class="d-flex foto-texto">
+                            <div class="d-flex foto-texto" data-bs-target=".carousel" data-bs-slide-to="4">
                                 <img class="w-50" src="imgs/pain.jpeg" alt="gojo">
                                 <p>Jujutsu no Kaisen</p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
+                <section class="col-12 p-0 mt-5 d-flex align-items-center justify-content-between voltar_avancar">
+                    <div>
+                        <h5>Descubra mais</h>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary">Voltar</button>
+                        <button class="btn btn-primary">Avançar</button>
+                    </div>
+                </section>
+                <section class="col-12 mb-5 mt-2 carousel_card">
+                    <div class="row m-auto">
+                        <div class="col-3">
+                            <div class="card m-auto">
+                                <div class="ratio ratio-16x9">
+                                    <img src="imgs/goku.jpeg" class="card-img-top rounded-5" alt="...">
+                                </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Bleach</h5>
+                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card m-auto">
+                                <div class="ratio ratio-16x9">
+                                    <img src="imgs/katchan.jpeg" class="card-img-top rounded-5" alt="...">
+                                </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Bleach</h5>
+                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card m-auto">
+                                <div class="ratio ratio-16x9">
+                                    <img src="imgs/lufy.jpeg" class="card-img-top rounded-5" alt="...">
+                                </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Bleach</h5>
+                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card m-auto">
+                                <div class="ratio ratio-16x9">
+                                    <img src="imgs/naruto.jpeg" class="card-img-top rounded-5" alt="...">
+                                </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Bleach</h5>
+                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 mb-5 aviso">
+                    <div class="row align-items-center">
+                        <div class="col-4">
+                            <img src="imgs/zoro.jpeg" alt="">
+                        </div>
+                        <div class="col-4 text-center">
+                            <h5>Você Tem Recompensas</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, labore eveniet placeat culpa corpo</p>
+                        </div>
+                        <div class="col-4 text-end">
+                            <h4>Você tem</h4>
+                            <p>R$ 475,65</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 mb-5 griid">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card m-auto">
+                                <div class="ratio ratio-16x9">
+                                    <img src="imgs/nezuko.jpeg" class="card-img-top rounded-5" alt="...">
+                                </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Bleach</h5>
+                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card m-auto">
+                                <div class="ratio ratio-16x9">
+                                    <img src="imgs/pain2.jpeg" class="card-img-top rounded-5" alt="...">
+                                </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Bleach</h5>
+                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card m-auto">
+                                <div class="ratio ratio-16x9">
+                                    <img src="imgs/tan.jpeg" class="card-img-top rounded-5 ratio" alt="...">
+                                </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Bleach</h5>
+                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-4">
+                            <div class="card m-auto">
+                                <div class="ratio ratio-16x9">
+                                    <img src="imgs/tanjiro.jpeg" class="card-img-top rounded-5" alt="...">
+                                </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Bleach</h5>
+                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card m-auto">
+                                <div class="ratio ratio-16x9">
+                                    <img src="imgs/tanjiroagua.jpeg" class="card-img-top rounded-5" alt="...">
+                                </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Bleach</h5>
+                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card m-auto">
+                                <div class="ratio ratio-16x9">
+                                    <img src="imgs/tanjiroirm.jpeg" class="card-img-top rounded-5" alt="...">
+                                </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Bleach</h5>
+                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 mb-5 gratis">
+                    <div class="row">
+                        <div class="col-12 mb-3 d-flex justify-content-between align-items-center">
+                            <h5>Indicação de Animes</h5>
+                            <button class="btn btn-primary">Ver mais</button>
+                        </div>
+                        <div class="col-6">
+                            <div class="card m-auto">
+                                <img src="imgs/tanjirokamado.jpeg" class="card-img-top rounded-5" alt="...">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Bleach</h5>
+                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card m-auto">
+                                <img src="imgs/tokyo.jpeg" class="card-img-top rounded-5" alt="...">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Bleach</h5>
+                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </section>
+                <section class="col-12 mb-5 card_button">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card m-auto">
+                                <div class="ratio ratio-16x9">
+                                    <img src="imgs/tomioka.jpeg" class="card-img-top rounded-5" alt="...">
+                                </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Bleach</h5>
+                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                    <a href="#" class="d-block mx-auto btn btn-primary">Shounen</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card m-auto">
+                                <div class="ratio ratio-16x9">
+                                    <img src="imgs/zeitsu.jpeg" class="card-img-top rounded-5" alt="...">
+                                </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Bleach</h5>
+                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                    <a href="#" class="d-block mx-auto btn btn-primary">Aventura</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card m-auto">
+                                <div class="ratio ratio-16x9">
+                                    <img src="imgs/zoro2.jpeg" class="card-img-top rounded-5" alt="...">
+                                </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Bleach</h5>
+                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                    <a href="#" class="d-block mx-auto btn btn-primary">Luta</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
         </main>
         <footer>

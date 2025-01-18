@@ -7,6 +7,11 @@
 
 aside {
   border-right: 1px solid black;
+}
+aside .lateral-parada {
+  position: sticky;
+  top: 0;
+  left: 0;
   height: 100vh;
 }
 
@@ -29,7 +34,7 @@ aside {
 .todos .principal .container-carousel .indicadores .foto-texto {
   align-items: center;
 }
-.todos .principal .container-carousel .indicadores .foto-texto:hover {
+.todos .principal .container-carousel .indicadores .foto-texto:hover, .todos .principal .container-carousel .indicadores .foto-texto:focus {
   border-radius: 20px;
   background-color: rgba(211, 211, 211, 0.962);
 }
@@ -39,4 +44,37 @@ aside {
 }
 .todos .principal .container-carousel .indicadores .foto-texto p {
   margin-bottom: 0px;
+}
+.todos .principal .carousel_card .card {
+  border: none;
+}
+.todos .principal .aviso {
+  border: 1px solid black;
+}
+.todos .principal .aviso img {
+  border-radius: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 95px;
+}
+.todos .principal .griid {
+  border: 1px solid black;
+}
+.todos .principal .griid .card {
+  border: none;
+}
+.todos .principal .gratis {
+  border: 1px solid black;
+}
+.todos .principal .gratis .card {
+  border: none;
+}
+.todos .principal .card_button {
+  border: 1px solid black;
+}
+.todos .principal .card_button .card {
+  border: none;
+}
+.todos .principal .card_button .card a {
+  width: 80%;
 }/*# sourceMappingURL=style.css.map */

@@ -7,7 +7,12 @@
 
 aside{
     border-right: 1px solid black;
-    height: 100vh;
+    .lateral-parada{
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: 100vh;
+    }
 }
 
 .todos{
@@ -37,7 +42,7 @@ aside{
             .indicadores{
                 .foto-texto{
                     align-items: center;
-                    &:hover{
+                    &:hover, &:focus{
                         border-radius: 20px;
                         background-color: rgba(211, 211, 211, 0.962);
                     }
@@ -48,6 +53,43 @@ aside{
                     p{
                         margin-bottom: 0px;
                     }
+                }
+            }
+        }
+        .carousel_card{
+            .card{
+                border: none;
+            }
+        }
+
+        .aviso{
+            border: 1px solid black;
+            img{
+                border-radius: 30px;
+                object-fit: contain;
+                max-height: 95px;
+            }
+        }
+
+        .griid{
+            border: 1px solid black;
+            .card{
+                border: none;
+            }
+        }
+
+        .gratis{
+            border: 1px solid black;
+            .card{
+                border: none;
+            }
+        }
+        .card_button{
+            border: 1px solid black;
+            .card{
+                border: none;
+                a{
+                    width: 80%;
                 }
             }
         }
