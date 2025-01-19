@@ -9,24 +9,27 @@
 </head>
 <body>
     <main class="row m-auto">
-        <aside class="col-3 lateral">
+        <aside class="col-lg-3 d-lg-block d-none lateral">
             <section class="lateral-parada">
-                <h1 class="text-center">Epic Games</h1>
-                <button class="d-block w-100 mt-1 m-auto btn btn-primary">Todos</button>
-                <button class="d-block w-100 mt-1 m-auto btn btn-primary">Biblioteca</button>
-                <button class="d-block w-100 mt-1 m-auto btn btn-primary">Descobrir</button>
+                <img class="d-block m-4" src="imgs/Anitube.png" alt="logo">
+                <button class="d-block w-100 mt-2 m-auto btn btn-primary">Todos</button>
+                <button class="d-block w-100 mt-2 m-auto btn btn-primary">Biblioteca</button>
+                <button class="d-block w-100 mt-2 m-auto btn btn-primary">Descobrir</button>
                 <h5 class="mt-5">Continuar Assistindo</h5>
                 <div class="row assistindo">
-                    <img class="col-6 rounded-5" src="imgs/bleach.jpeg" alt=" bleach">
-                    <p class="col-6">bleach</p>
+                    <img class="col-6 rounded-5" src="imgs/bleach.jpeg" alt=" Ichigo">
+                    <p class="col-6">Bleach</p>
                 </div>
             </section>
         </aside>
-        <main class="col-9 todos">
+        <main class="col-lg-9 col-12  todos">
             <header class="row mt-3">
-                <div class="col-6 d-flex">
-                    <input class="form-control" type="text" placeholder="pesquisar">
-                    <button class="btn btn-primary" type="submit">pesquisar</button>
+                <div class="col-12 d-block d-lg-none">
+                    <img class="img-fluid" src="imgs/Anitube.png" alt="logo">
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 d-flex container_input">
+                    <input class="form-control" type="text" placeholder="Pesquisar">
+                    <button class="btn btn-primary botao_pesquisar" type="submit">pesquisar</button>
                     <div class="dropdown ms-1">
                         <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Descobrir</button>
                         <div class="dropdown-menu">
@@ -35,9 +38,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-end">
-                    <button class="btn btn-primary me-1">Lista Desejos</button>
-                    <button class="btn btn-primary">Favoritos</button>
+                <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-end container_usuario">
+                    <a href="#" class="me-2">Lista de Desejos</a>
+                    <a href="#">Favoritos</a>
                     <div class="usuario">
                         <img src="imgs/bleach.jpeg" alt="bleach">
                         <img src="imgs/bleach.jpeg" alt="bleach">
@@ -47,22 +50,22 @@
             <main class="row m-auto principal">
                 <section class="col-12 mt-4 container-carousel">
                     <div class="row">
-                        <div class="col-9 carousel slide" data-bs-ride="carousel">
+                        <div class="col-lg-9 col-md-8 col-12 carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner rounded-5">
                                 <div data-bs-interval="600" class="carousel-item active">
                                     <img class="d-block w-100" src="imgs/gojo.jpeg" alt="gojo">
                                 </div>
                                 <div data-bs-interval="600" class="carousel-item" >
-                                    <img class="d-block w-100" src="imgs/dabi.jpeg" alt="gojo">
+                                    <img class="d-block w-100" src="imgs/dabi.jpeg" alt="Dabi">
                                 </div>
                                 <div data-bs-interval="600" class="carousel-item" >
-                                    <img class="d-block w-100" src="imgs/hashivento.jpeg" alt="gojo">
+                                    <img class="d-block w-100" src="imgs/hashivento.jpeg" alt="Sanemi">
                                 </div>
                                 <div data-bs-interval="600" class="carousel-item" >
-                                    <img class="d-block w-100" src="imgs/inousuk.jpeg" alt="gojo">
+                                    <img class="d-block w-100" src="imgs/inousuk.jpeg" alt="inousuk">
                                 </div>
                                 <div data-bs-interval="600" class="carousel-item" >
-                                    <img class="d-block w-100" src="imgs/pain.jpeg" alt="gojo">
+                                    <img class="d-block w-100" src="imgs/pain.jpeg" alt="pain">
                                 </div>
                             </div>    
                             <button class="carousel-control-prev" data-bs-target=".carousel" data-bs-slide="prev">
@@ -79,26 +82,26 @@
                                 <button data-bs-target=".carousel" data-bs-slide-to="4"></button>
                             </div>
                         </div>
-                        <div class="col-3 indicadores d-flex flex-column justify-content-between">
+                        <div class="col-lg-3 col-md-4 d-none d-lg-block d-md-block indicadores">
                             <div class="d-flex foto-texto" data-bs-target=".carousel" data-bs-slide-to="0">
                                 <img class="w-50" src="imgs/gojo.jpeg" alt="gojo">
                                 <p>Jujutsu no Kaisen</p>
                             </div>
                             <div class="d-flex foto-texto" data-bs-target=".carousel" data-bs-slide-to="1">
-                                <img class="w-50" src="imgs/dabi.jpeg" alt="gojo">
-                                <p>Jujutsu no Kaisen</p>
+                                <img class="w-50" src="imgs/dabi.jpeg" alt="Dabi">
+                                <p>Boku no Hero</p>
                             </div>
                             <div class="d-flex foto-texto" data-bs-target=".carousel" data-bs-slide-to="2">
-                                <img class="w-50" src="imgs/hashivento.jpeg" alt="gojo">
-                                <p>Jujutsu no Kaisen</p>
+                                <img class="w-50" src="imgs/hashivento.jpeg" alt="Sanemi Shinazugawa">
+                                <p>Kimetsu no Yaiba</p>
                             </div>
                             <div class="d-flex foto-texto" data-bs-target=".carousel" data-bs-slide-to="3">
-                                <img class="w-50" src="imgs/inousuk.jpeg" alt="gojo">
-                                <p>Jujutsu no Kaisen</p>
+                                <img class="w-50" src="imgs/inousuk.jpeg" alt="Inousuk">
+                                <p>Demon Slayer</p>
                             </div>
                             <div class="d-flex foto-texto" data-bs-target=".carousel" data-bs-slide-to="4">
-                                <img class="w-50" src="imgs/pain.jpeg" alt="gojo">
-                                <p>Jujutsu no Kaisen</p>
+                                <img class="w-50" src="imgs/pain.jpeg" alt="Pain">
+                                <p>Naruto</p>
                             </div>
                         </div>
                     </div>
@@ -114,47 +117,47 @@
                 </section>
                 <section class="col-12 mb-5 mt-2 carousel_card">
                     <div class="row m-auto">
-                        <div class="col-3">
+                        <div class="col-12 col-lg-3 col-md-6">
                             <div class="card m-auto">
                                 <div class="ratio ratio-16x9">
-                                    <img src="imgs/goku.jpeg" class="card-img-top rounded-5" alt="...">
+                                    <img src="imgs/goku.jpeg" class="card-img-top rounded-5" alt="Goku">
                                 </div>
                                 <div class="card-body p-0">
-                                    <h5 class="card-title">Bleach</h5>
-                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                    <h5 class="card-title">Dragon Ball Z</h5>
+                                    <p class="card-text">Um anime classico</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 col-lg-3 col-md-6">
                             <div class="card m-auto">
                                 <div class="ratio ratio-16x9">
-                                    <img src="imgs/katchan.jpeg" class="card-img-top rounded-5" alt="...">
+                                    <img src="imgs/katchan.jpeg" class="card-img-top rounded-5" alt="katchan">
                                 </div>
                                 <div class="card-body p-0">
-                                    <h5 class="card-title">Bleach</h5>
-                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                    <h5 class="card-title">Boku no hero</h5>
+                                    <p class="card-text">Superação e escola</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 col-lg-3 col-md-6">
                             <div class="card m-auto">
                                 <div class="ratio ratio-16x9">
-                                    <img src="imgs/lufy.jpeg" class="card-img-top rounded-5" alt="...">
+                                    <img src="imgs/lufy.jpeg" class="card-img-top rounded-5" alt="lufy">
                                 </div>
                                 <div class="card-body p-0">
-                                    <h5 class="card-title">Bleach</h5>
-                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                    <h5 class="card-title">One Piece</h5>
+                                    <p class="card-text">Anime incrível de pirata</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 col-lg-3 col-md-6">
                             <div class="card m-auto">
                                 <div class="ratio ratio-16x9">
-                                    <img src="imgs/naruto.jpeg" class="card-img-top rounded-5" alt="...">
+                                    <img src="imgs/naruto.jpeg" class="card-img-top rounded-5" alt="naruto">
                                 </div>
                                 <div class="card-body p-0">
-                                    <h5 class="card-title">Bleach</h5>
-                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                    <h5 class="card-title">Naruto Shippuden</h5>
+                                    <p class="card-text">Um incrivel anime de Ninja</p>
                                 </div>
                             </div>
                         </div>
@@ -162,14 +165,14 @@
                 </section>
                 <section class="col-12 mb-5 aviso">
                     <div class="row align-items-center">
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4 col-md-4 text-center text-lg-start">
                             <img src="imgs/zoro.jpeg" alt="">
                         </div>
-                        <div class="col-4 text-center">
+                        <div class="col-12 col-lg-4 col-md-4 text-center">
                             <h5>Você Tem Recompensas</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, labore eveniet placeat culpa corpo</p>
                         </div>
-                        <div class="col-4 text-end">
+                        <div class="col-12 col-lg-4 col-md-4 text-center text-lg-end">
                             <h4>Você tem</h4>
                             <p>R$ 475,65</p>
                         </div>
@@ -177,10 +180,21 @@
                 </section>
                 <section class="col-12 mb-5 griid">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4 col-md-6">
                             <div class="card m-auto">
                                 <div class="ratio ratio-16x9">
-                                    <img src="imgs/nezuko.jpeg" class="card-img-top rounded-5" alt="...">
+                                    <img src="imgs/nezuko.jpeg" class="card-img-top rounded-5" alt="nezuko">
+                                </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Demon Slayer</h5>
+                                    <p class="card-text">Um episódio melhor que o outro</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-6">
+                            <div class="card m-auto">
+                                <div class="ratio ratio-16x9">
+                                    <img src="imgs/pain2.jpeg" class="card-img-top rounded-5" alt="pain">
                                 </div>
                                 <div class="card-body p-0">
                                     <h5 class="card-title">Bleach</h5>
@@ -188,86 +202,75 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4 col-md-6">
                             <div class="card m-auto">
                                 <div class="ratio ratio-16x9">
-                                    <img src="imgs/pain2.jpeg" class="card-img-top rounded-5" alt="...">
+                                    <img src="imgs/tan.jpeg" class="card-img-top rounded-5 ratio" alt="kamado">
                                 </div>
                                 <div class="card-body p-0">
-                                    <h5 class="card-title">Bleach</h5>
-                                    <p class="card-text">Espetacular anime de shinigami</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card m-auto">
-                                <div class="ratio ratio-16x9">
-                                    <img src="imgs/tan.jpeg" class="card-img-top rounded-5 ratio" alt="...">
-                                </div>
-                                <div class="card-body p-0">
-                                    <h5 class="card-title">Bleach</h5>
-                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                    <h5 class="card-title">Demon Slayer</h5>
+                                    <p class="card-text">Um episódio melhor que o outro</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row mt-3">
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4 col-md-6">
                             <div class="card m-auto">
                                 <div class="ratio ratio-16x9">
                                     <img src="imgs/tanjiro.jpeg" class="card-img-top rounded-5" alt="...">
                                 </div>
                                 <div class="card-body p-0">
-                                    <h5 class="card-title">Bleach</h5>
-                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                    <h5 class="card-title">Demon Slayer</h5>
+                                    <p class="card-text">Um episódio melhor que o outro</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4 col-md-6">
                             <div class="card m-auto">
                                 <div class="ratio ratio-16x9">
                                     <img src="imgs/tanjiroagua.jpeg" class="card-img-top rounded-5" alt="...">
                                 </div>
                                 <div class="card-body p-0">
-                                    <h5 class="card-title">Bleach</h5>
-                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                    <h5 class="card-title">Demon Slayer</h5>
+                                    <p class="card-text">Um episódio melhor que o outro</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4 col-md-6">
                             <div class="card m-auto">
                                 <div class="ratio ratio-16x9">
                                     <img src="imgs/tanjiroirm.jpeg" class="card-img-top rounded-5" alt="...">
                                 </div>
                                 <div class="card-body p-0">
-                                    <h5 class="card-title">Bleach</h5>
-                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                    <h5 class="card-title">Demon Slayer</h5>
+                                    <p class="card-text">Um episódio melhor que o outro</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section class="col-12 mb-5 gratis">
-                    <div class="row">
+                    <div class="row mx-0 my-0 my-lg-5 mx-lg-5">
                         <div class="col-12 mb-3 d-flex justify-content-between align-items-center">
                             <h5>Indicação de Animes</h5>
                             <button class="btn btn-primary">Ver mais</button>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6 col-md-6">
                             <div class="card m-auto">
-                                <img src="imgs/tanjirokamado.jpeg" class="card-img-top rounded-5" alt="...">
+                                <img src="imgs/tanjirokamado.jpeg" class="card-img-top rounded-5" alt="tanjiro">
                                 <div class="card-body p-0">
-                                    <h5 class="card-title">Bleach</h5>
-                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                    <h5 class="card-title">Kimetsu no Yaiba</h5>
+                                    <p class="card-text">Não vai se arrepender</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6 col-md-6">
                             <div class="card m-auto">
-                                <img src="imgs/tokyo.jpeg" class="card-img-top rounded-5" alt="...">
+                                <img src="imgs/tokyo.jpeg" class="card-img-top rounded-5" alt="Kaneki">
                                 <div class="card-body p-0">
-                                    <h5 class="card-title">Bleach</h5>
-                                    <p class="card-text">Espetacular anime de shinigami</p>
+                                    <h5 class="card-title">Tokyo Gohul</h5>
+                                    <p class="card-text">Algumas cenas vão marcar</p>
                                 </div>
                             </div>
                         </div>
@@ -275,39 +278,39 @@
                 </section>
                 <section class="col-12 mb-5 card_button">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4 col-md-6 mt-3 mt-lg-0">
                             <div class="card m-auto">
                                 <div class="ratio ratio-16x9">
-                                    <img src="imgs/tomioka.jpeg" class="card-img-top rounded-5" alt="...">
+                                    <img src="imgs/tomioka.jpeg" class="card-img-top rounded-5" alt="tomioka">
                                 </div>
                                 <div class="card-body p-0">
-                                    <h5 class="card-title">Bleach</h5>
-                                    <p class="card-text">Espetacular anime de shinigami</p>
-                                    <a href="#" class="d-block mx-auto btn btn-primary">Shounen</a>
+                                    <h5 class="card-title">Shounen</h5>
+                                    <p class="card-text">Grande variedade</p>
+                                    <a href="#" class="d-block mx-auto btn btn-primary">Ver mais</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4 col-md-6 mt-3 mt-lg-0">
                             <div class="card m-auto">
                                 <div class="ratio ratio-16x9">
-                                    <img src="imgs/zeitsu.jpeg" class="card-img-top rounded-5" alt="...">
+                                    <img src="imgs/zeitsu.jpeg" class="card-img-top rounded-5" alt="zeitsu">
                                 </div>
                                 <div class="card-body p-0">
-                                    <h5 class="card-title">Bleach</h5>
-                                    <p class="card-text">Espetacular anime de shinigami</p>
-                                    <a href="#" class="d-block mx-auto btn btn-primary">Aventura</a>
+                                    <h5 class="card-title">Animes de Aventura</h5>
+                                    <p class="card-text">Os melhores estão aqui</p>
+                                    <a href="#" class="d-block mx-auto btn btn-primary">Ver mais</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4 col-md-6 mt-3 mt-lg-0">
                             <div class="card m-auto">
                                 <div class="ratio ratio-16x9">
-                                    <img src="imgs/zoro2.jpeg" class="card-img-top rounded-5" alt="...">
+                                    <img src="imgs/zoro2.jpeg" class="card-img-top rounded-5" alt="Zoro">
                                 </div>
                                 <div class="card-body p-0">
-                                    <h5 class="card-title">Bleach</h5>
-                                    <p class="card-text">Espetacular anime de shinigami</p>
-                                    <a href="#" class="d-block mx-auto btn btn-primary">Luta</a>
+                                    <h5 class="card-title">Animes de Luta</h5>
+                                    <p class="card-text">Os melhores animes de luta</p>
+                                    <a href="#" class="d-block mx-auto btn btn-primary">Ver mais</a>
                                 </div>
                             </div>
                         </div>
@@ -315,9 +318,6 @@
                 </section>
             </main>
         </main>
-        <footer>
-
-        </footer>
     </main>
     <script src="lib/bootstrap.bundle.min.js"></script>
 </body>

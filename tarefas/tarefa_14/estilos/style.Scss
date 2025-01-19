@@ -1,8 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Cores principais
+$principal: #000000; // Preto
+$branco: #ffffff; // Branco
+
+// Variáveis adicionais (opcional para sombreamento e estilos complementares)
+$cinza_escuro: #1a1a1a; // Cinza escuro (usado para fundo ou contraste)
+$cinza_claro: #f5f5f5; // Cinza claro (usado em bordas e preenchimentos suaves)
+$botao: #0073e6; // Azul (exemplo para botões ou links, se necessário)
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: cursive;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: $principal;
+    color: white;
 }
 
 aside{
@@ -12,11 +29,80 @@ aside{
         top: 0;
         left: 0;
         height: 100vh;
+        img{
+            width: 80%;
+        }
+        button{
+            color: darkgray;
+            border: none;
+            height: 70px;
+            border-radius: 15px;
+            background-color: transparent;
+            &:hover, &:focus{
+                color: white;
+                background-color: $cinza_escuro;
+            }
+        }
     }
+    
 }
 
 .todos{
+    img{
+        transition: filter 0.3s ease, transform 0.3s ease;
+        &:hover{
+            filter: brightness(1.5);
+            transform: scale(1.05);
+        }
+    }
     header{
+        display: flex;
+        align-items: center;
+        .container_input{
+            display: flex;
+            align-items: center;
+            input{
+                color: white;
+                height: 50px;
+                border: none;
+                background-color: $cinza_escuro;
+                border-radius: 40px;
+                max-width: 250px;
+                &::placeholder{
+                    color: darkgray;
+                }
+            }
+            .botao_pesquisar{
+                display: none;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: darkgrey;
+            &:hover{
+                color: white;
+            }
+        }
+        .dropdown{
+            button{
+                border: none;
+                background-color: transparent;
+                &:hover{
+                    border: $cinza_claro;
+                }
+            }
+            .dropdown-menu{
+                background-color: black;
+                .dropdown-item{
+                    background-color: transparent;
+                }
+            }
+            &:hover{
+                .dropdown-menu{
+                    display: block;
+                }
+            }
+        }
         .usuario{
             img{
                 width: 50px;
@@ -25,6 +111,11 @@ aside{
         }
     }
     .principal{
+        .card{
+            background-color: $principal;
+            color: white;
+        }
+        
         .container-carousel{
             .carousel.slide{
                 padding: 0px 0px;
@@ -44,7 +135,7 @@ aside{
                     align-items: center;
                     &:hover, &:focus{
                         border-radius: 20px;
-                        background-color: rgba(211, 211, 211, 0.962);
+                        background-color: $cinza_escuro;
                     }
                     img{
                         border-radius: 16px;
@@ -63,7 +154,8 @@ aside{
         }
 
         .aviso{
-            border: 1px solid black;
+            background-color: $cinza_escuro;
+            border-radius: 20px;
             img{
                 border-radius: 30px;
                 object-fit: contain;
@@ -72,20 +164,20 @@ aside{
         }
 
         .griid{
-            border: 1px solid black;
             .card{
                 border: none;
             }
         }
 
         .gratis{
-            border: 1px solid black;
+            border-radius: 20px;
+            background-color: $cinza_escuro;
             .card{
+                background-color: $cinza_escuro;
                 border: none;
             }
         }
         .card_button{
-            border: 1px solid black;
             .card{
                 border: none;
                 a{

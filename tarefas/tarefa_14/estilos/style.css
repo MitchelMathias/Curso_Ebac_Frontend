@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: cursive;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: white;
 }
 
 aside {
@@ -14,11 +21,84 @@ aside .lateral-parada {
   left: 0;
   height: 100vh;
 }
+aside .lateral-parada img {
+  width: 80%;
+}
+aside .lateral-parada button {
+  color: darkgray;
+  border: none;
+  height: 70px;
+  border-radius: 15px;
+  background-color: transparent;
+}
+aside .lateral-parada button:hover, aside .lateral-parada button:focus {
+  color: white;
+  background-color: #1a1a1a;
+}
 
+.todos img {
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+.todos img:hover {
+  filter: brightness(1.5);
+  transform: scale(1.05);
+}
+.todos header {
+  display: flex;
+  align-items: center;
+}
+.todos header .container_input {
+  display: flex;
+  align-items: center;
+}
+.todos header .container_input input {
+  color: white;
+  height: 50px;
+  border: none;
+  background-color: #1a1a1a;
+  border-radius: 40px;
+  max-width: 250px;
+}
+.todos header .container_input input::-moz-placeholder {
+  color: darkgray;
+}
+.todos header .container_input input::placeholder {
+  color: darkgray;
+}
+.todos header .container_input .botao_pesquisar {
+  display: none;
+}
+.todos header a {
+  text-decoration: none;
+  color: darkgrey;
+}
+.todos header a:hover {
+  color: white;
+}
+.todos header .dropdown button {
+  border: none;
+  background-color: transparent;
+}
+.todos header .dropdown button:hover {
+  border: #f5f5f5;
+}
+.todos header .dropdown .dropdown-menu {
+  background-color: black;
+}
+.todos header .dropdown .dropdown-menu .dropdown-item {
+  background-color: transparent;
+}
+.todos header .dropdown:hover .dropdown-menu {
+  display: block;
+}
 .todos header .usuario img {
   width: 50px;
   -webkit-clip-path: circle();
           clip-path: circle();
+}
+.todos .principal .card {
+  background-color: #000000;
+  color: white;
 }
 .todos .principal .container-carousel .carousel.slide {
   padding: 0px 0px;
@@ -36,7 +116,7 @@ aside .lateral-parada {
 }
 .todos .principal .container-carousel .indicadores .foto-texto:hover, .todos .principal .container-carousel .indicadores .foto-texto:focus {
   border-radius: 20px;
-  background-color: rgba(211, 211, 211, 0.962);
+  background-color: #1a1a1a;
 }
 .todos .principal .container-carousel .indicadores .foto-texto img {
   border-radius: 16px;
@@ -49,7 +129,8 @@ aside .lateral-parada {
   border: none;
 }
 .todos .principal .aviso {
-  border: 1px solid black;
+  background-color: #1a1a1a;
+  border-radius: 20px;
 }
 .todos .principal .aviso img {
   border-radius: 30px;
@@ -57,20 +138,16 @@ aside .lateral-parada {
      object-fit: contain;
   max-height: 95px;
 }
-.todos .principal .griid {
-  border: 1px solid black;
-}
 .todos .principal .griid .card {
   border: none;
 }
 .todos .principal .gratis {
-  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #1a1a1a;
 }
 .todos .principal .gratis .card {
+  background-color: #1a1a1a;
   border: none;
-}
-.todos .principal .card_button {
-  border: 1px solid black;
 }
 .todos .principal .card_button .card {
   border: none;
