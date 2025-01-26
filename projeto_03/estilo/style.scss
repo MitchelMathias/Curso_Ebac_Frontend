@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+$cor1:#e15f41;
+$cor2:#ffeae6;
+
+body{
+    font-family: roboto, Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #e15f41;
+    .navbar-brand{
+        font-family: Pacifico;
+        color: white;
+        font-size: 2.1em;
+        margin-left: 20px;
+        &:hover{
+            color: #fff;
+        }
+    }
+    .navbar-toggler{
+        background-color: #fff;
+    }
+    .nav{
+        .nav-link.active{
+            background-color: white;
+            color: #e15f41;
+        }
+        .nav-link{
+            color: white;
+            &:hover{
+                background-color: white;
+                color: #e15f41;
+            }
+        }
+    }
+}
+
+main{
+    h1,h2,h3,h4,h5,h6{
+        font-family: pacifico, cursive, monospace;
+    }
+    span{
+        color: #e15f41;
+    }
+    .sobre_restaurante{
+        background-color: $cor2;
+    }
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                max-height: 65vh;
+            }
+        }
+    }
+}
