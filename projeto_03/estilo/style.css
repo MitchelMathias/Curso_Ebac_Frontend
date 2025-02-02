@@ -31,6 +31,9 @@ header .nav .nav-link:hover {
   color: #e15f41;
 }
 
+main .laranja {
+  color: #e15f41;
+}
 main h1, main h2, main h3, main h4, main h5, main h6 {
   font-family: pacifico, cursive, monospace;
 }
@@ -42,4 +45,37 @@ main .sobre_restaurante {
 }
 main .carousel .carousel-inner .carousel-item {
   max-height: 65vh;
+}
+main .cardapio {
+  background-color: #ffeae6;
+}
+main .cardapio .nav-pills .active {
+  background-color: #e15f41;
+  color: white;
+}
+main .cardapio .nav-link:hover {
+  color: #e15f41;
+}
+main .cardapio .nav-link:focus, main .cardapio .nav-link:active {
+  background-color: #e15f41;
+  color: white;
+}
+main .cardapio .tab-content img {
+  border-radius: 15px;
+}
+main .fale_conosco .formulario .btn {
+  background-color: #e15f41;
+  color: white;
+}
+main .fale_conosco .formulario .btn:hover {
+  transform: scale(0.95);
+}
+main .fale_conosco .social li {
+  display: inline;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.6em !important;
+  }
 }/*# sourceMappingURL=style.css.map */

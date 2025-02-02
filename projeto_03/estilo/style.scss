@@ -38,6 +38,9 @@ header{
 }
 
 main{
+    .laranja{
+        color: #e15f41;
+    }
     h1,h2,h3,h4,h5,h6{
         font-family: pacifico, cursive, monospace;
     }
@@ -54,4 +57,49 @@ main{
             }
         }
     }
+    .cardapio{
+        background-color: $cor2;
+        .nav-pills .active{
+            background-color: $cor1;
+            color: white;
+        }
+        .nav-link{
+            &:hover{
+                color: #e15f41;
+            }
+            &:focus, &:active{
+                background-color: $cor1;
+                color: white;
+            }
+        }
+        .tab-content{
+            img{
+                border-radius: 15px;
+            }
+        }
+    }
+    .fale_conosco{
+        .formulario{
+            .btn{
+                background-color: #e15f41;
+                color: white;
+                &:hover{
+                    transform: scale(0.95);
+                }
+            }
+        }
+        .social{
+            li{
+                display: inline;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        h1{
+            font-size: 1.6em !important;
+        }
+    }    
 }
