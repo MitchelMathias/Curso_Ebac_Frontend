@@ -56,7 +56,7 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 32.66%);
   -moz-column-gap: 1%;
-       column-gap: 1%;
+  column-gap: 1%;
   row-gap: 4%;
   width: 100%;
 }
@@ -88,7 +88,7 @@ section {
   .products {
     grid-template-columns: repeat(2, 48.5%);
     -moz-column-gap: 3%;
-         column-gap: 3%;
+    column-gap: 3%;
   }
 }
 @media screen and (max-width: 767px) {
