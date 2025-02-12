@@ -1,0 +1,15 @@
+*{
+    font-family: cursive;
+    box-sizing: border-box;
+}
+
+.section-fade {
+    opacity: 0; /* Começa invisível */
+    transform:translateX(-100px) ;
+    transition: all 1s; /* Duração da animação */
+}
+
+.section-fade.mostrar {
+    opacity: 1; /* Termina visível */
+    transform: translateX(0);
+}

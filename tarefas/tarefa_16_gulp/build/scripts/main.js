@@ -1,0 +1,1 @@
+function surgir(){let t=.8*window.innerHeight;document.querySelectorAll(".section-fade").forEach((e,n)=>{e.getBoundingClientRect().top<t&&e.classList.add("mostrar")})}window.addEventListener("scroll",surgir),window.addEventListener("load",surgir);
