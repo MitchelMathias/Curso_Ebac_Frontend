@@ -1,10 +1,12 @@
+const { option } = require("grunt")
+
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         less:{
             development:{
                 files:{
-                    'main.less.css':'main.less'
+                    'dev/style/main.css':'src/style/main.less'
                 }
             },
             production:{
@@ -12,40 +14,92 @@ module.exports = function(grunt) {
                     compress:true,
                 },
                 files:{
-                    'main.less.min.css':'main.less'
+                    'dist/style/main.min.css':'src/style/main.less'
                 },
             },
         },
-        sass:{
-            development:{
-                files:{
-                    'main.sass.css':'main.scss'
-                },
-            },
-            production:{
+        watch:{
+            dev:{
+                files:['src/style/**/*.less','src/*.html', 'src/scripts/**/*.js'],
+                tasks:['less:development','replace:dev', 'copy:dev'],
+            }
+        },
+        replace:{
+            dev:{
                 options:{
-                    style:'compressed'
+                    patterns:[{
+                        match:'endereco_do_css',
+                        replacement: 'style/main.css'
+                    },{
+                        match:'endereco_do_js',
+                        replacement:'../src/scripts/main.js'
+                    }]
+                },
+                files:[{
+                    expand: true,
+                    flatten: true,
+                    src: ['src/index.html'],
+                    dest: 'dev/'
+                }]
+            },
+            dist:{
+                options:{
+                    patterns:[{
+                        match:'endereco_do_css',
+                        replacement:'style/main.min.css'
+                    },
+                    {
+                        match:'endereco_do_js',
+                        replacement:'scripts/main.min.js'
+                    }]
+                },
+                files:[{
+                    expand: true,
+                    flatten: true,
+                    src: ['prebuild/index.html'],
+                    dest: 'dist/'
+                }]
+            }
+        },
+        htmlmin:{
+            dist:{
+                options:{
+                    removeComments:true,
+                    collapseWhitespace:true
                 },
                 files:{
-                    'main.min.sass.css':'main.scss'
-                },
-            },
+                    'prebuild/index.html': 'src/index.html'
+                }
+            }
         },
-        concurrent:{
-            target:['sass', 'less']
+        copy:{
+            dev:{
+                files:[{
+                    expand:true,
+                    cwd:'src/scripts/',
+                    src:['**/*.js'],
+                    dest:'dev/scripts/'
+                }]
+            }
+        },
+        clean:['prebuild'],
+        uglify:{
+            target:{
+                files:[{
+                    'dev/scripts/main.min.js': ['src/scripts/**/*.js'],
+                    'dist/scripts/main.min.js': ['src/scripts/**/*.js']
+                }]
+            }
         }
     })
-    grunt.registerTask('ola',function(){
-        const assincrona = this.async()
-        setTimeout(()=>{
-            console.log('Hello World')
-            assincrona()
-        },3000)
-    })
-
     grunt.loadNpmTasks('grunt-contrib-less')
-    grunt.loadNpmTasks('grunt-contrib-sass')
-    grunt.loadNpmTasks('grunt-concurrent')
+    grunt.loadNpmTasks('grunt-contrib-watch')
+    grunt.loadNpmTasks('grunt-replace')
+    grunt.loadNpmTasks('grunt-contrib-htmlmin')
+    grunt.loadNpmTasks('grunt-contrib-clean')
+    grunt.loadNpmTasks('grunt-contrib-uglify')
+    grunt.loadNpmTasks('grunt-contrib-copy')
 
-    grunt.registerTask('default', ['sass', 'less'])
+    grunt.registerTask('default', ['less:development','replace:dev','copy:dev','uglify', 'watch',])
+    grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist','clean','uglify'])
 }
