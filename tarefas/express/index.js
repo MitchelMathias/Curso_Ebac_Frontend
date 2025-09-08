@@ -1,8 +1,16 @@
 const express = require('express')
+const cors = require('cors')
 const app = express()
 
-app.get('/t', (req, res)=>{
-    res.send('Ola mundo')
+app.use(cors())
+app.use(express.json())
+
+app.post('/t', (req, res)=>{
+    let {nome, idade} = req.body
+    idade += 2
+    nome +=" Teste"
+    console.log(nome, idade)
+    res.json({nome, idade})
 })
 
 app.listen(3000, ()=> {
