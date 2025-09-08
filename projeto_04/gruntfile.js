@@ -11,12 +11,29 @@ module.exports = function(grunt) {
             }
         },
         watch:{
-            files: ['dev/less/*.less'],
-            tasks: ['less:dev']
+            styles:{
+                files: ['dev/less/*.less'],
+                tasks: ['less:dev']
+            },
+            images:{
+                files: ['dev/images/**/*.{png,jpg,gif,svg}'],
+                tasks: ['imagemin:compress_images']
+            }
+        },
+        imagemin:{
+            compress_images:{
+                files:[{
+                    expand: true,
+                    cwd: 'dev/images/',
+                    src: ['**/*.{png,jpg,gif,svg}'],
+                    dest: 'dev/images_compress/'
+                }]
+            }
         }
     })
     
     grunt.loadNpmTasks('grunt-contrib-less')
     grunt.loadNpmTasks('grunt-contrib-watch')
-    grunt.registerTask('default', ['less', 'watch'])
+    grunt.loadNpmTasks('grunt-contrib-imagemin')
+    grunt.registerTask('default', ['less', 'watch', 'imagemin'])
 }
