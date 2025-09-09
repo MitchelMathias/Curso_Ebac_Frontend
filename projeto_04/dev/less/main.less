@@ -1,5 +1,57 @@
+@import "variaveis.less";
+@import "_hero.less";
+
+.text(@fontSize:16px){
+    font-size: @fontSize;
+    line-height: @fontSize + 10px;
+}
+
+.title(@fontSize:28px){
+    .text(@fontSize);
+    color:@corTextoSecundario;
+
+}
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    color: white;
 }
+
+body{
+    background-color: @corDeFundo;;
+}
+
+.txt-big {
+    .text(18px);
+    color: @corTextoPrincipal;
+}
+
+.txt{
+    .text();
+}
+
+.txt-small{
+    .text(12px);
+}
+
+title-big{
+    .title(44px);
+}
+
+title{
+    .title();
+}
+
+title-small{
+    .title(28px);
+}
+
+.link{
+    .text(18px);
+    color: @corTextoSecundario;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
