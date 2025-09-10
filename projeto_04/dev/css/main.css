@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Avenir-Bold';
+  src: url(/dev/assets/Avenir-Bold.woff2);
+  font-weight: 700;
+}
 .hero {
   padding: 5.6vw;
   min-height: 80vh;
@@ -44,11 +49,47 @@
   margin-top: 2vw;
   margin-bottom: 8px;
 }
+.shows {
+  padding: 2vw 5.6vw;
+}
+.shows__list {
+  display: none;
+  margin-top: 44px;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+.shows__list--is-active {
+  display: grid;
+}
+.shows__list__item img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+.shows__tabs {
+  display: flex;
+  justify-content: center;
+}
+.shows__tabs__button {
+  color: #f9f9f9;
+  font-size: 20px;
+  border: none;
+  padding-bottom: 5px;
+  background: none;
+  text-transform: uppercase;
+  margin: 0 1vw;
+  cursor: pointer;
+  border-bottom: 5px solid transparent;
+}
+.shows__tabs__button--is-active {
+  border-color: #f9f9f9;
+}
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   color: white;
+  font-family: 'Avenir-Bold', sans-serif;
 }
 body {
   background-color: #040714;
