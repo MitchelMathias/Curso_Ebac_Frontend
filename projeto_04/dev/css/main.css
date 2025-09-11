@@ -137,6 +137,24 @@
 p {
   text-align: center;
 }
+.watch__anywhere {
+  padding: 5.6vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.watch__anywhere img {
+  max-width: 100%;
+}
+.watch__anywhere__text__container {
+  padding: 0 2vw;
+}
+.watch__anywhere__text__container h2 {
+  margin-bottom: 24px;
+}
+.watch__anywhere__text__container p {
+  text-align: justify;
+}
 * {
   margin: 0px;
   padding: 0px;
