@@ -3,6 +3,11 @@
   src: url(/dev/assets/Avenir-Bold.woff2);
   font-weight: 700;
 }
+@font-face {
+  font-family: 'Avenir-Regular';
+  src: url(/dev/assets/Avenir-Regular.woff2);
+  font-weight: 400;
+}
 .hero {
   padding: 5.6vw;
   min-height: 80vh;
@@ -48,8 +53,10 @@
   border-radius: 8px;
   margin-top: 2vw;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 .shows {
+  min-height: 50vw;
   padding: 2vw 5.6vw;
 }
 .shows__list {
@@ -84,6 +91,52 @@
 .shows__tabs__button--is-active {
   border-color: #f9f9f9;
 }
+.plans {
+  padding: 5.6vw;
+}
+.plans h2 {
+  text-align: center;
+}
+.plans__list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.plans__list__item {
+  text-align: center;
+  padding: 60px 44px;
+  max-width: 380px;
+  width: 100%;
+}
+.plans__list__item:nth-child(2) {
+  background-image: url(/dev/images/fundo_combo_plus.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.plans__list__item img {
+  height: 83px;
+}
+.plans__list__item strong {
+  margin-top: 24px;
+  display: block;
+}
+.plans button {
+  display: block;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  color: #f9f9f9;
+  background-color: #6421ff;
+  text-transform: uppercase;
+  border-radius: 8px;
+  margin-top: 2vw;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+p {
+  text-align: center;
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -102,22 +155,26 @@ body {
 .txt {
   font-size: 16px;
   line-height: 26px;
+  font-family: 'Avenir-Regular';
+  font-weight: 400;
 }
 .txt-small {
   font-size: 12px;
   line-height: 22px;
+  font-family: 'Avenir-Regular';
+  font-weight: 400;
 }
-title-big {
+.title-big {
   font-size: 44px;
   line-height: 54px;
   color: #f9f9f9;
 }
-title {
+.title {
   font-size: 28px;
   line-height: 38px;
   color: #f9f9f9;
 }
-title-small {
+.title-small {
   font-size: 28px;
   line-height: 38px;
   color: #f9f9f9;
