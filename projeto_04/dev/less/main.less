@@ -3,6 +3,7 @@
 @import "shows.less";
 @import "plans.less";
 @import "watch-anywhere.less";
+@import "availableDevices.less";
 
 .text(@fontSize:16px){
     font-size: @fontSize;
@@ -20,7 +21,7 @@
     padding: 0px;
     box-sizing: border-box;
     color: white;
-    font-family: 'Avenir-Bold', sans-serif;
+    font-family: 'Avenir-Regular', sans-serif;
 }
 
 body{
@@ -33,15 +34,17 @@ body{
 }
 
 .txt{
-    .text();
+    .text(16px);
     font-family: 'Avenir-Regular';
     font-weight: 400;
+    color: silver;
 }
 
 .txt-small{
     .text(12px);
     font-family: 'Avenir-Regular';
     font-weight: 400;
+    color: silver;
 }
 
 .title-big{
