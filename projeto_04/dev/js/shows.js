@@ -1,5 +1,6 @@
 addEventListener('DOMContentLoaded', function() { // carrega
     const buttons = this.document.querySelectorAll('[data-tab-button]'); //guarda todos os botões
+    const questions = this.document.querySelectorAll('[data-faq-question]') //guarda todos li com esse data
 
     for (let i = 0; i<buttons.length; i++) { // percorre os botões
         buttons[i].addEventListener('click', (botao)=>{ //quando clicar no botão
@@ -12,7 +13,18 @@ addEventListener('DOMContentLoaded', function() { // carrega
             aba.classList.add('shows__list--is-active') // adiciona a classe visivel na aba que foi selecionada
         })
     }
+
+    for (let i = 0; i<questions.length; i++){
+        questions[i].addEventListener('click', abreFechaAccordion) // sem parenteses pois to dizendo pra ser chamada a função apenas apos o click e com patenses na função chama imediatamente
+    }
 })
+
+function abreFechaAccordion(elemento){
+    const classe = 'faq__questions__item--is-open'
+    const elementoPai = elemento.target.parentNode;
+    
+    elementoPai.classList.toggle(classe)
+}
 
 function remove_borda_buttons(){
     const botaos = this.document.querySelectorAll('[data-tab-button]'); // guarda todos os botões
