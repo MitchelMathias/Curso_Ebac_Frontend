@@ -246,6 +246,66 @@ p {
   padding-bottom: 24px;
   transition: all 0.5s ease;
 }
+.footer {
+  padding: 26px 8px;
+}
+.footer__container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.footer__logo {
+  width: 80px;
+  margin: 0 auto 10px;
+}
+.footer__links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.footer__links__item {
+  display: inline-block;
+}
+.footer__links__item a {
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
+}
+.footer__links__item a:hover {
+  color: #f9f9f9;
+}
+.footer p {
+  margin-bottom: 16px;
+}
+.footer .language-selector {
+  display: flex;
+  align-items: center;
+}
+.footer .language-selector img {
+  height: 18px;
+  width: 18px;
+}
+.footer .language-selector select {
+  border: none;
+  border-radius: 8px !important;
+  background-color: transparent;
+  color: silver;
+}
+.footer .language-selector select:hover {
+  border: none;
+  color: #f9f9f9;
+}
+.footer .language-selector select:focus {
+  border: none;
+}
+.footer .language-selector select option {
+  border: none;
+  color: #040714;
+}
 * {
   margin: 0px;
   padding: 0px;
