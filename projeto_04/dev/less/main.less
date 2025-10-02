@@ -6,6 +6,7 @@
 @import "availableDevices.less";
 @import "faq.less";
 @import "footer.less";
+@import "header.less";
 
 .text(@fontSize:16px){
     font-size: @fontSize;
@@ -24,6 +25,7 @@
     box-sizing: border-box;
     color: white;
     font-family: 'Avenir-Regular', sans-serif;
+    list-style: none;
 }
 
 body{
@@ -33,6 +35,9 @@ body{
 .txt-big {
     .text(18px);
     color: @corTextoPrincipal;
+    @media (max-width: 768px) {
+        .text(15px);
+    }
 }
 
 .txt{
@@ -40,6 +45,10 @@ body{
     font-family: 'Avenir-Regular';
     font-weight: 400;
     color: silver;
+    @media (max-width: 768px) {
+        .text(14px);
+    }
+    
 }
 
 .txt-small{
@@ -47,18 +56,31 @@ body{
     font-family: 'Avenir-Regular';
     font-weight: 400;
     color: silver;
+    @media (max-width: 768px) {
+        .text(11px);
+    }
+    
 }
 
 .title-big{
     .title(44px);
+    @media (max-width: 768px) {
+        .title(26px);
+    }
 }
 
 .title{
     .title();
+    @media (max-width: 768px) {
+        .title(24px);
+    }
 }
 
 .title-small{
     .title(28px);
+    @media (max-width: 768px) {
+        .title(22px);
+    }
 }
 
 .link{

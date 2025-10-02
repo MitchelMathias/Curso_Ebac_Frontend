@@ -7,6 +7,21 @@
     <title>Clone Disney+</title>
 </head>
 <body>
+    <header class="header header--is--hidden">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="dev/images/disneyplus.svg" alt="disney plus">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button--secondary">Assine Agora</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button--dark">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <section class="hero">
         <div class="hero__content">
             <h1 class="hero__content__branding">
@@ -142,7 +157,10 @@
         </div>
     </section>
     <section class="watch__anywhere watch__anywhere--image-full-width">
-        <img src="dev/images/fundo_rei_leao.png" alt="Imagem com TV, Tablete e celular">
+        <picture>
+            <source media="(max-width: 768px)" srcset="dev/images/fundo_rei_leao_celular.png">
+            <img src="dev/images/fundo_rei_leao.png" alt="Imagem com TV, Tablete e celular">
+        </picture>
         <div class="watch__anywhere__text__container watch__anywhere--image-full-width__text__container">
             <h2 class="title-big">Baixe filmes e séries</h2>
             <p class="txt">Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet</p>

@@ -2,6 +2,19 @@ addEventListener('DOMContentLoaded', function() { // carrega
     const buttons = this.document.querySelectorAll('[data-tab-button]'); //guarda todos os botões
     const questions = this.document.querySelectorAll('[data-faq-question]') //guarda todos li com esse data
 
+    const hero = this.document.querySelector('.hero')
+    const alturaHero = hero.clientHeight
+
+    this.window.addEventListener('scroll', ()=>{
+        let posicaoAtual = this.window.scrollY
+
+        if (posicaoAtual <= alturaHero){
+            ocultaHeader()
+        }else{
+            exibeHeader()
+        }
+    })
+
     for (let i = 0; i<buttons.length; i++) { // percorre os botões
         buttons[i].addEventListener('click', (botao)=>{ //quando clicar no botão
             const alvo = botao.target.dataset.tabButton // pega o valor do atributo
@@ -40,4 +53,14 @@ function esconde_abas(){ // função
     for (let i = 0; i<tabs.length; i++){ // percorre as abas
         tabs[i].classList.remove('shows__list--is-active') // remove a classe visivel de todas as abas
     }
+}
+
+function ocultaHeader(){
+    const header = this.document.querySelector('.header')
+    header.classList.add('header--is--hidden')
+}
+
+function exibeHeader(){
+    const header = this.document.querySelector('.header')
+    header.classList.remove('header--is--hidden')
 }
