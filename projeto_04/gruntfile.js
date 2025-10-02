@@ -29,11 +29,19 @@ module.exports = function(grunt) {
                     dest: 'dev/images_compress/'
                 }]
             }
+        },
+        uglify:{
+            dev:{
+                files:{
+                    'dev/js/mainUglify.js': ['dev/js/**/*.js']
+                }
+            }
         }
     })
     
     grunt.loadNpmTasks('grunt-contrib-less')
     grunt.loadNpmTasks('grunt-contrib-watch')
     grunt.loadNpmTasks('grunt-contrib-imagemin')
+    grunt.loadNpmTasks('grunt-contrib-uglify')
     grunt.registerTask('default', ['less', 'watch', 'imagemin'])
 }
