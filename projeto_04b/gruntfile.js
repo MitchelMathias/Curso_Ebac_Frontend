@@ -20,7 +20,7 @@ module.exports = function(grunt){
                 compress: true,
             },
             dist: {
-                src: 'style/main.less',
+                src: 'style/**.less',
                 dest: 'build/style/main.css',
             }
         },
@@ -32,12 +32,22 @@ module.exports = function(grunt){
             }
         },
 
-        watch:{
-            options:{
-                livereload: true,
+        watch: {
+            html: {
+                files: ['index.html'],
+                tasks: ['htmlmin'],
+                options: { livereload: true }
             },
-            files:['index.html', 'style/main.less', 'js/main.js'],
-            tasks:['htmlmin', 'less', 'uglify'],
+            css: {
+                files: ['style/**/*.less'],
+                tasks: ['less'],
+                options: { livereload: true }
+            },
+            js: {
+                files: ['js/**/*.js'],
+                tasks: ['uglify'],
+                options: { livereload: true }
+            }
         }
         
     })
@@ -46,5 +56,5 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
-    grunt.registerTask('default', ['htmlmin', 'less', 'uglify']);
+    grunt.registerTask('default', ['watch']);
 }

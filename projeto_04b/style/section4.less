@@ -1,0 +1,56 @@
+/* LESS */
+.faq {
+    max-width: 800px;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: white;
+    }
+
+    .accordion-item {
+        
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        overflow: hidden;
+
+        .accordion-header {
+            color: black;
+            background-color: #f4f4f4;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            position: relative;
+
+            &:after {
+                content: '+';
+                position: absolute;
+                right: 20px;
+                font-size: 18px;
+                transition: transform 0.3s;
+            }
+
+            &.active:after {
+                transform: rotate(45deg);
+            }
+        }
+
+        .accordion-body {
+            color: black;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 20px;
+            background-color: #fff;
+        }
+
+        .accordion-body p {
+            color: black;
+            padding: 15px 0;
+            margin: 0;
+        }
+    }
+}
