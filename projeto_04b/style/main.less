@@ -1,27 +1,85 @@
-@import 'section1.less';
 @import 'header.less';
+@import 'section1.less';
 @import 'section2.less';
 @import 'section3.less';
 @import 'section4.less';
+@import 'section5.less';
 @import 'footer.less';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,600;8..144,800&display=swap');
 
+/* Tokens */
+@color-bg: #0c0c0f; /* profundo/cinemático */
+@color-surface: #15151b; /* cartões */
+@color-primary: #e63946; /* vermelho sangue */
+@color-secondary: #cdd6f4; /* cinza claro */
+@color-accent: #f1c40f; /* destaque dourado */
+@glass: rgba(255,255,255,0.06);
+@border: rgba(255,255,255,0.12);
+
+/* Base */
 * {
-    font-family: 'Pacifico', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Pacifico','cursive';
-    color: white;
+html, body {
+  height: 100%;
+  background: radial-gradient(1200px 800px at 20% 0%, #121219 0%, @color-bg 60%);
+  color: @color-secondary;
 }
 
-body{
-    background-color: black;
+body {
+  font-family: 'Roboto Flex', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  line-height: 1.6;
 }
+
+h1, h2, h3 {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.5px;
+}
+
+.container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border: 1px solid @border;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  color: @color-secondary;
+  text-decoration: none;
+  backdrop-filter: blur(6px);
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+.btn--primary {
+  border-color: fade(@color-primary, 60%);
+  background: linear-gradient(180deg, fade(@color-primary, 20%), fade(@color-primary, 10%));
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.45);
+}
+
+.section {
+  padding: 80px 0;
+}
+
+/* Util */
+.glass {
+  background: @glass;
+  border: 1px solid @border;
+  backdrop-filter: blur(10px);
+}
+
+/* Components */
 
 

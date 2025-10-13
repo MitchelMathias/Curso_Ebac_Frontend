@@ -1,16 +1,44 @@
 .pag03{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
-    &__tittle{
-        width: 48%;
+  padding: 80px 0;
+  .container();
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 32px;
+
+  &__tittle{
+    align-self: center;
+    h2{
+      font-size: clamp(1.8rem, 3.6vw, 2.4rem);
+      color: white;
+      margin-bottom: 12px;
     }
-    &__img{
-        width: 48%;
-        img{
-            border-radius: 20px;
-            width: 100%;
-        }
+    p{
+      color: @color-secondary;
+      opacity: 0.9;
     }
+  }
+  &__img{
+    img{
+      width: 100%;
+      aspect-ratio: 4 / 3; // igual ao Castelo
+      height: auto;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 1px solid @border;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+  }
+
+  @media (max-width: 880px){
+    grid-template-columns: 1fr;
+    gap: 20px;
+    &__img img{ border-radius: 14px; }
+    &__tittle h2{ font-size: clamp(1.6rem, 5.2vw, 2.1rem); }
+    &__tittle p{ font-size: clamp(.95rem, 3.8vw, 1.1rem); }
+  }
+
+  @media (max-width: 640px){
+    padding: 60px 0;
+    &__tittle{ text-align: center; }
+  }
 }
