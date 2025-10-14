@@ -32,6 +32,14 @@ module.exports = function(grunt){
             }
         },
 
+        copy: {
+            assets: {
+                files: [
+                    { expand: true, cwd: 'assets/', src: ['**/*'], dest: 'build/assets/' }
+                ]
+            }
+        },
+
         watch: {
             html: {
                 files: ['index.html'],
@@ -56,5 +64,6 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
-    grunt.registerTask('default', ['htmlmin', 'less', 'uglify', 'watch']);
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.registerTask('default', ['htmlmin', 'less', 'uglify', 'copy', 'watch']);
 }
