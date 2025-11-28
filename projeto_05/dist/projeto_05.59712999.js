@@ -715,6 +715,6 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"4M6V8":[function(require,module,exports,__globalThis) {
 
-},{}]},["9JJ5D","4M6V8"], "4M6V8", "parcelRequire94c2", {})
+},{}]},["9JJ5D","4M6V8"], "4M6V8", "parcelRequire41a1", {})
 
-//# sourceMappingURL=tarefa_21_Landing_Page_evento.59712999.js.map
+//# sourceMappingURL=projeto_05.59712999.js.map
