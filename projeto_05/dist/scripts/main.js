@@ -714,6 +714,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"3cYfC":[function(require,module,exports,__globalThis) {
+console.log('Ola mundo');
 
 },{}]},["7dMPt","3cYfC"], "3cYfC", "parcelRequire41a1", {})
 
